@@ -1,12 +1,12 @@
 --Select for scrap products
 
 --INSERT INTO [KG].[dbo].[DokumentStavke]
-SELECT 
+  SELECT 
 	   [PrStZapisa] AS SifraSDok
 	  ,[PrStDokumenta] AS BrojDokumentaSDok
-    ,[PrDatTrans] AS DatumSDok
-    ,[PrSifMp] AS ArtiklSDok
-    ,SUM([PrPrevKol]) AS KolicinaPrimljenaSDok
+      ,[PrDatTrans] AS DatumSDok
+      ,[PrSifMp] AS ArtiklSDok
+      ,SUM([PrPrevKol]) AS KolicinaPrimljenaSDok
 	  ,PrSifStroskMesta AS MestTroskaSDok
 	  ,[PrSifVrstePrometa] AS VrstaPrometaSDok
 	  ,PrTpVrstaNapake AS GreskaSDok
@@ -22,12 +22,12 @@ SELECT
   --Select for products
     
   --INSERT INTO [KG].[dbo].[DokumentStavke]
-SELECT 
+  SELECT 
 	   [PrStZapisa] AS SifraSDok
 	  ,[PrStDokumenta] AS BrojDokumentaSDok
-    ,[PrDatTrans] AS DatumSDok
-    ,[PrSifMp] AS ArtiklSDok
-    ,SUM([PrPrevKol]) AS KolicinaPrimljenaSDok
+      ,[PrDatTrans] AS DatumSDok
+      ,[PrSifMp] AS ArtiklSDok
+      ,SUM([PrPrevKol]) AS KolicinaPrimljenaSDok
 	  ,PrSifStroskMesta AS MestTroskaSDok
 	  ,[PrSifVrstePrometa] AS VrstaPrometaSDok
   FROM [KRAGUJEVAC].[dbo].[Promet] pr
