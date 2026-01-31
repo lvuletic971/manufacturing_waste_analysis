@@ -1,6 +1,6 @@
 --Select for scrap products
 
---INSERT INTO [KG].[dbo].[DokumentStavke]
+--INSERT INTO [DokumentStavke]
   SELECT 
 	   [PrStZapisa] AS SifraSDok
 	  ,[PrStDokumenta] AS BrojDokumentaSDok
@@ -11,7 +11,7 @@
 	  ,[PrSifVrstePrometa] AS VrstaPrometaSDok
 	  ,PrTpVrstaNapake AS GreskaSDok
 	  ,PrTpVzrokNapake AS UzrokGreskeSDok
-  FROM [KRAGUJEVAC].[dbo].[Promet] pr
+  FROM [Promet] pr
   LEFT JOIN PrometTransPos pos on pr.PrStPrTrans = pos.PrTpStDokumenta
   WHERE PrPrevKol >= 0 
   AND PrSifVrstePrometa = 'SKA'
@@ -21,7 +21,7 @@
 
   --Select for products
     
-  --INSERT INTO [KG].[dbo].[DokumentStavke]
+  --INSERT INTO [DokumentStavke]
   SELECT 
 	   [PrStZapisa] AS SifraSDok
 	  ,[PrStDokumenta] AS BrojDokumentaSDok
@@ -30,7 +30,7 @@
       ,SUM([PrPrevKol]) AS KolicinaPrimljenaSDok
 	  ,PrSifStroskMesta AS MestTroskaSDok
 	  ,[PrSifVrstePrometa] AS VrstaPrometaSDok
-  FROM [KRAGUJEVAC].[dbo].[Promet] pr
+  FROM [Promet] pr
   LEFT JOIN PrometTransPos pos on pr.PrStPrTrans = pos.PrTpStDokumenta
   WHERE PrPrevKol >= 0 
   AND (PrSifVrstePrometa = 'PPP' OR PrSifVrstePrometa = 'PGP') 
