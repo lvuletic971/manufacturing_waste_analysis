@@ -11,7 +11,7 @@ SELECT
 	[PrSifVrstePrometa] AS VrstaPrometaSDok,
 	PrTpVrstaNapake AS GreskaSDok,
 	PrTpVzrokNapake AS UzrokGreskeSDok
-FROM [KRAGUJEVAC].[dbo].[Promet] pr
+FROM [Promet] pr
 LEFT JOIN PrometTransPos pos on pr.PrStPrTrans = pos.PrTpStDokumenta
 WHERE PrPrevKol >= 0 
 AND PrSifVrstePrometa = 'SKA'
@@ -30,7 +30,7 @@ SELECT
 	SUM([PrPrevKol]) AS KolicinaPrimljenaSDok,
 	PrSifStroskMesta AS MestTroskaSDok,
 	[PrSifVrstePrometa] AS VrstaPrometaSDok
-FROM [KRAGUJEVAC].[dbo].[Promet] pr
+FROM [Promet] pr
 LEFT JOIN PrometTransPos pos on pr.PrStPrTrans = pos.PrTpStDokumenta
 WHERE PrPrevKol >= 0 
 AND (PrSifVrstePrometa = 'PPP' OR PrSifVrstePrometa = 'PGP') 
