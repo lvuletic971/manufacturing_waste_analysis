@@ -12,3 +12,11 @@ SELECT
 	MpCena AS KategorijaCenaA
 FROM MaticniPodatki
 WHERE MpSifKarKlj IN ('I', 'P') 
+
+--Select for classification
+
+--INSERT INTO [KG].[dbo].[Klasifikacija]
+SELECT 
+	KLoStZapisa AS SifraKlasif,
+	KLoOpis AS OpisKlasif
+FROM KlasOzn
