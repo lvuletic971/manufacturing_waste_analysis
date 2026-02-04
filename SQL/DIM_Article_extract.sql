@@ -1,4 +1,18 @@
---Separation of finished products and semi-finished products from the article code list, because only within these two product classifications does waste occur
+/*
+Purpose:
+Preparation of source data for DimArticle.
+
+This script extracts:
+- finished and semi-finished products
+- article classifications
+- cost prices valid for the observed period.
+
+The extracted datasets are later used in the SSIS ETL process for populating the DimArticle table.
+*/
+
+------------------------------------------------------------
+-- 1. Articles (finished and semi-finished products)
+------------------------------------------------------------
 
 --INSERT INTO [KG].[dbo].[Artikli]
 SELECT 
@@ -15,17 +29,19 @@ SELECT
 FROM MaticniPodatki
 WHERE MpSifKarKlj IN ('I', 'P') 
 	
-
---Gathering additional information from the item classification table
+------------------------------------------------------------
+-- 2. Article classifications
+------------------------------------------------------------
 	
 --INSERT INTO [KG].[dbo].[Klasifikacija]
 SELECT 
 	KLoStZapisa AS SifraKlasif,
 	KLoOpis AS OpisKlasif
 FROM KlasOzn
-
 	
---Collecting data from the price list of items, in order to obtain the cost prices of items that were valid in the observed period
+------------------------------------------------------------
+-- 3. Cost prices from price list
+------------------------------------------------------------
 	
 --INSERT INTO [Cenovnik]
 SELECT 
