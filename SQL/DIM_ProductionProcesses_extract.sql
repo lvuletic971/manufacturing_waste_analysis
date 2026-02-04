@@ -1,6 +1,16 @@
---Isolating the work process that led to product waste, for a combination of one item and one work center
+/*
+Purpose:
+Preparation of source data for the DimProductionProcess dimension.
 
---INSERT INTO [RadniProcesi]
+This script extracts production processes that led to product waste.
+For each combination of item and work center, only one production process
+is selected to avoid duplicates in the dimension.
+*/
+
+------------------------------------------------------------
+-- Production processes (deduplicated by item and work center)
+------------------------------------------------------------
+
 ;WITH cte AS (
     SELECT 
         DpSifra AS SifraRP, 
