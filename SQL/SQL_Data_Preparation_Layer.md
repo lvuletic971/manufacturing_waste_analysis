@@ -1,4 +1,4 @@
-##SQL_Data_Preparation_Layer##
+## SQL_Data_Preparation_Layer
 
 This folder contains SQL scripts used to prepare source data before loading it into the data warehouse.
 
@@ -22,9 +22,9 @@ All scripts follow the same workflow:
 
 - SSIS loads the data into dimension and fact tables
 
-Scripts Overview:
+## Scripts Overview:
 
-DIM_Article_extract.sql
+### DIM_Article_extract.sql
 
 - prepares data for the Article dimension:
 
@@ -34,15 +34,15 @@ DIM_Article_extract.sql
 
 - valid cost prices.
 
-DIM_Error_extract.sql
+### DIM_Error_extract.sql
 
 - extracts error types and causes related to manufacturing waste, used for building error dimensions.
 
-DIM_ProductionProcesses_extract.sql
+### DIM_ProductionProcesses_extract.sql
 
 - identifies unique production processes per item and work center and removes duplicates using window functions.
 
-FACT_Manufacturing_extract.sql
+### FACT_Manufacturing_extract.sql
 
 - prepares the manufacturing fact dataset by:
 
@@ -52,7 +52,7 @@ FACT_Manufacturing_extract.sql
 
 - preserving error attributes for scrap records
 
-Architectural Role
+## Architectural Role
 
 This SQL layer represents the staging boundary between the transactional OLTP system and the analytical data warehouse,
 ensuring clean, consistent, and performance-safe data for ETL.
