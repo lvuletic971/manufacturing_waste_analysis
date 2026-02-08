@@ -1,3 +1,5 @@
+##SQL_Data_Preparation_Layer##
+
 This folder contains SQL scripts used to prepare source data before loading it into the data warehouse.
 
 The goal of this layer is to:
