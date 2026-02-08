@@ -36,3 +36,53 @@ These insights support data-driven operational and strategic decisions in manufa
 ### Tool Used
 
 Tableau for dashboard design and visualization
+
+
+
+## Dashboard Highlights
+
+### 1. Waste Trend Over Time
+
+This visualization shows the relationship between total production
+and manufacturing waste across the observed years.
+
+The chart reveals a **continuous increase in waste**
+despite stable or slightly declining production,
+indicating **declining production efficiency**.
+
+![Waste Trend](waste_trend.png)
+
+---
+
+### 2. Products With Highest Waste
+
+This view identifies **products contributing the most to total waste**.
+
+Some products generate **high waste despite low production volume**,
+which suggests **process or quality issues rather than scale effects**.
+
+![Top Waste Products](top_products_waste.png)
+
+---
+
+### 3. Root Causes of Waste
+
+This analysis highlights the **dominant technical and machinery-related causes**
+behind manufacturing waste.
+
+The findings indicate potential need for **equipment maintenance or replacement**.
+
+![Waste Causes](waste_causes.png)
+
+---
+
+### 4. Waste Percentage vs Acceptable Threshold
+
+This KPI view compares the **actual waste percentage**
+with the **acceptable 1% production threshold**.
+
+Later years clearly exceed the limit,
+signaling **reduced operational efficiency**.
+
+![Waste KPI](waste_percentage_kpi.png)
+
