@@ -1,4 +1,4 @@
-# Data Model Documentation
+## Data Model Documentation
 
 This folder contains the logical data model of the Manufacturing Waste Analysis data warehouse.
 
