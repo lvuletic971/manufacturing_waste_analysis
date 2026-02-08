@@ -1,10 +1,9 @@
 /*
 Purpose:
-Preparation of source data for the DimProductionProcess dimension.
+Preparation of source data in staging tables used for building the data warehouse dimension.
 
 This script extracts production processes that led to product waste.
-For each combination of item and work center, only one production process
-is selected to avoid duplicates in the dimension.
+For each combination of item and work center, only one production process is selected to avoid duplicates in the dimension.
 */
 
 ------------------------------------------------------------
