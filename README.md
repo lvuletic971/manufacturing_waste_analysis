@@ -24,7 +24,7 @@ surrounded by multiple **dimension tables** describing:
 - error types and causes  
 - time  
 
-The complete [Data Model](./DOCS/DW_model.png) and schema diagram are available in the [DOCS](./DOCS) folder.
+The complete [Data Model](./DOCS/DW_model.png) is available in the [DOCS](./DOCS) folder.
 
 ---
 
