@@ -24,7 +24,7 @@ surrounded by multiple **dimension tables** describing:
 - error types and causes  
 - time  
 
-The complete data model and schema diagram are available in the [ime](./DOCS)` folder.
+The complete data model and schema diagram are available in the [DOCS](./DOCS)` folder.
 
 ---
 
@@ -45,7 +45,7 @@ Only **prepared staging data** is later used for loading dimension and fact tabl
 
 ## SQL Preparation Layer
 
-The [ime](./SQL) folder contains SQL scripts used for preparing **staging datasets** prior to the ETL process.
+The [SQL](./SQL) folder contains SQL scripts used for preparing **staging datasets** prior to the ETL process.
 
 Each script focuses on a specific **dimension or fact domain** and performs:
 
@@ -89,7 +89,7 @@ Due to their complexity, ETL packages for:
 - the **Article dimension**
 - the **Manufacturing Fact table**
 
-are documented in additional detail within the project [ime](./ETL).
+are documented in additional detail within the project in the folder [ETL](./ETL).
 
 ---
 
@@ -103,7 +103,7 @@ Dashboards and visualizations enable analysis of:
 - waste distribution by product and production unit  
 - key performance indicators related to manufacturing efficiency  
 
-Example reports and dashboards are available in the [ime](./BI) folder.
+Example reports and dashboards are available in the [BI](./BI) folder.
 
 ---
 
