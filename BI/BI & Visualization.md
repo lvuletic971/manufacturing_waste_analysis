@@ -61,7 +61,7 @@ This view identifies **products contributing the most to total waste**.
 Some products generate **high waste despite low production volume**,
 which suggests **process or quality issues rather than scale effects**.
 
-![Top Waste Products](top_products_waste.png)
+![Top Waste Products](TopWasteProducts.png)
 
 ---
 
@@ -72,7 +72,7 @@ behind manufacturing waste.
 
 The findings indicate potential need for **equipment maintenance or replacement**.
 
-![Waste Causes](waste_causes.png)
+![Waste Causes](WasteCauses.png)
 
 ---
 
@@ -84,4 +84,4 @@ with the **acceptable 1% production threshold**.
 Later years clearly exceed the limit,
 signaling **reduced operational efficiency**.
 
-![Waste KPI](waste_percentage_kpi.png)
+![Waste KPI](WasteKPI.png)
