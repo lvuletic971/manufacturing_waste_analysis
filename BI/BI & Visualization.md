@@ -50,7 +50,7 @@ The chart reveals a **continuous increase in waste**
 despite stable or slightly declining production,
 indicating **declining production efficiency**.
 
-![Waste Trend](waste_trend.png)
+![Waste Trend](Waste Trend.png)
 
 ---
 
