@@ -1,54 +1,53 @@
-FactPromet – ETL process
+## FactPromet – ETL process
 
 The ETL process for FactPromet prepares and loads manufacturing transaction data into the central fact table of the data warehouse.
 
 The process begins with an Execute SQL Task that ensures the target fact table structure is ready for loading.
 This is followed by a Data Flow Task where production and waste transactions are extracted, transformed, and merged into a unified analytical dataset.
 
-Data source – transaction tables
+### Data source – transaction tables
 
 Production and waste information is extracted from:
 
-Production transaction records
+- Production transaction records
 
-Waste (scrap) transaction records
+- Waste (scrap) transaction records
 
-Supporting lookup tables for errors, causes, dates, products, and production processes
+- Supporting lookup tables for errors, causes, dates, products, and production processes
 
 These datasets are first prepared in a staging database to avoid performance impact on the operational system.
 
-Transformations
+### Transformations
 
 Key transformations in the Data Flow include:
 
-Separation of waste vs. regular production transactions
+- Separation of waste vs. regular production transactions
 
-Aggregation of produced quantities and waste amounts
+- Aggregation of produced quantities and waste amounts
 
-Joining staging datasets to align production and scrap by
-date, document, and product
+- Joining staging datasets to align production and scrap by date, document, and product
 
-Lookup transformations for:
+- Lookup transformations for:
 
-Product dimension
+  - Product dimension
 
-Date dimension
+  -  Date dimension
 
-Production process dimension
+  - Production process dimension
 
-Error type and error cause dimensions
+  - Error type and error cause dimensions
 
-Handling of missing matches and default values
+- Handling of missing matches and default values
 
-Calculation of analytical measures:
+- Calculation of analytical measures:
 
-Produced quantity
+  - Produced quantity
 
-Waste quantity
+  - Waste quantity
 
-Waste percentage
+  - Waste percentage
 
-Waste value
+  - Waste value
 
 Goal
 
